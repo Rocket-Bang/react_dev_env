@@ -1,0 +1,30 @@
+{
+    "name": "LUNA-CellUpdate",
+    "version": "1.0.0",
+    "description": "WEHAGO Platform에 대한 Front-End Cell단위 업데이트 테스트 by Douzone_UIUXCore",
+    "private": true,
+    "license": "MIT",
+    "author": "DOUZONE BIZON DBP Headquarters, UI/UX Core Team",
+    "repository": {
+        "type": "git",
+        "url": "..."
+    },
+    "bugs": {
+        "url": "..."
+    },
+    "homepage": "...",
+    "main": "...",
+    "scripts": {
+        "start": "webpack-dev-server --progress --env development",
+        "build": "npm run build:babel && npm run build:copy-files",
+        "build:babel": "babel ./src --ignore *.spec.js --out-dir ./lib",
+        "build:copy-files": "babel-node ./scripts/copy-files.js",
+        "clean:build": "rimraf lib"
+    },
+    "devDependencies": {
+
+    },
+    "dependencies": {
+
+    }
+}
